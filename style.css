@@ -1293,3 +1293,205 @@ footer h2{
   }
 
 }
+
+/*   FOOTER */
+
+footer{
+
+  background:#050505;
+
+  color:white;
+
+  padding:80px 8% 30px;
+}
+
+/* FOOTER CONTAINER */
+
+.footer-container{
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  text-align:center;
+
+  gap:50px;
+
+  margin-bottom:50px;
+}
+/* FOOTER SECTIONS */
+
+.footer-section{
+
+  width:100%;
+
+  max-width:700px;
+
+  text-align:center;
+}
+
+.footer-section h2{
+
+  color:#ff6600;
+
+  margin-bottom:20px;
+
+  font-size:32px;
+}
+
+.footer-section h3{
+
+  color:#ff6600;
+
+  margin-bottom:20px;
+
+  font-size:24px;
+}
+
+.footer-section p{
+
+  color:#ccc;
+
+  line-height:1.8;
+
+  margin-bottom:15px;
+}
+
+/* QUICK LINKS */
+
+.footer-section a{
+
+  display:block;
+
+  color:#ccc;
+
+  text-decoration:none;
+
+  margin-bottom:14px;
+
+  transition:0.3s;
+}
+
+.footer-section a:hover{
+
+  color:#ff6600;
+
+  transform:translateX(5px);
+}
+
+/* SOCIALS */
+
+.footer-socials{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:20px;
+
+  margin-bottom:30px;
+}
+
+.footer-socials a{
+
+  width:50px;
+
+  height:50px;
+
+  border-radius:50%;
+
+  background:#111;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  font-size:22px;
+
+  transition:0.4s;
+}
+
+.footer-socials a:hover{
+
+  background:#ff6600;
+
+  color:white;
+
+  transform:translateY(-5px);
+}
+
+/* LOCATION */
+
+.location-title{
+
+  margin-top:20px;
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom{
+
+  border-top:1px solid #222;
+
+  padding-top:25px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  text-align:center;
+
+  gap:12px;
+}
+
+.footer-bottom p{
+
+  color:#888;
+}
+
+/* CREDITS */
+
+.credits{
+
+  font-size:14px;
+
+  opacity:0.7;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .footer-container{
+
+    flex-direction:column;
+  }
+
+  .footer-bottom{
+
+    flex-direction:column;
+
+    text-align:center;
+  }
+
+  .footer-section{
+
+    text-align:center;
+  }
+
+  .footer-socials{
+
+    justify-content:center;
+  }
+
+}
