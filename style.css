@@ -268,6 +268,25 @@ nav a:hover{
 .gallery img:hover{
   transform:scale(1.05);
 }
+.gallery video{
+
+  width:320px;
+
+  border-radius:20px;
+
+  object-fit:cover;
+
+  transition:0.4s;
+
+  cursor:pointer;
+
+  background:black;
+}
+
+.gallery video:hover{
+
+  transform:scale(1.03);
+}
 
 /* SPONSORS */
 
@@ -489,4 +508,307 @@ footer h2{
 .member-card:hover img{
 
   transform:scale(1.05);
+}
+/* MOBILE RESPONSIVE DESIGN*/
+
+@media(max-width:1024px){
+
+  nav{
+    padding:0 5%;
+  }
+
+  nav ul{
+    gap:20px;
+  }
+
+  .hero-content h1{
+    font-size:90px;
+  }
+
+  .hero-content h2{
+    font-size:40px;
+  }
+
+}
+
+/*TABLETS */
+
+@media(max-width:768px){
+
+  /* NAVBAR */
+
+  nav{
+
+    height:auto;
+
+    flex-direction:column;
+
+    padding:15px 5%;
+
+    gap:15px;
+  }
+
+  nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+  }
+
+  nav a{
+    font-size:15px;
+  }
+
+  .logo{
+    width:45px;
+  }
+
+  .logo-container h1{
+    font-size:22px;
+    text-align:center;
+  }
+
+  /* HERO */
+
+  .hero{
+
+    padding:120px 5% 80px;
+    height:auto;
+  }
+
+  .hero-content h1{
+
+    font-size:65px;
+
+    line-height:1;
+  }
+
+  .hero-content h2{
+
+    font-size:32px;
+
+    margin-top:15px;
+  }
+
+  .hero-content p{
+
+    font-size:17px;
+
+    padding:0 10px;
+  }
+
+  .hero-btn{
+
+    padding:15px 30px;
+
+    font-size:16px;
+  }
+
+  /* SECTIONS */
+
+  .section{
+
+    padding:90px 6%;
+  }
+
+  .section h2{
+
+    font-size:40px;
+  }
+
+  .section p{
+
+    font-size:16px;
+  }
+
+  /* STATS */
+
+  .stats{
+
+    gap:30px;
+  }
+
+  .stat-box h2{
+
+    font-size:50px;
+  }
+
+  /* CARDS */
+
+  .card,
+  .spec-box,
+  .member-card{
+
+    width:100%;
+    max-width:350px;
+  }
+
+  .member-card img{
+
+    height:260px;
+  }
+
+  /* GALLERY */
+
+  .gallery img{
+
+    width:100%;
+    max-width:350px;
+  }
+
+  /* SPONSORS */
+
+  .sponsor-container{
+
+    gap:25px;
+  }
+
+  .sponsor-container img{
+
+    width:130px;
+  }
+
+  /* CONTACT */
+
+  .contact-form input,
+  .contact-form textarea{
+
+    padding:16px;
+
+    font-size:16px;
+  }
+
+  /* FOOTER */
+
+  footer{
+
+    padding:50px 6%;
+  }
+
+}
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media(max-width:480px){
+
+  .hero-content h1{
+
+    font-size:48px;
+  }
+
+  .hero-content h2{
+
+    font-size:24px;
+  }
+
+  .hero-content p{
+
+    font-size:15px;
+  }
+
+  .section h2{
+
+    font-size:32px;
+  }
+
+  .card,
+  .spec-box{
+
+    padding:25px;
+  }
+
+  .socials a{
+
+    width:55px;
+    height:55px;
+
+    font-size:22px;
+  }
+
+  #closePopup{
+
+    font-size:45px;
+
+    top:15px;
+    right:20px;
+  }
+
+}
+/* HAMBURGER MENU */
+
+.menu-toggle{
+
+  display:none;
+
+  font-size:28px;
+
+  color:#ff6600;
+
+  cursor:pointer;
+}
+
+/* MOBILE NAVBAR */
+
+@media(max-width:768px){
+
+  nav{
+
+    flex-direction:row;
+
+    justify-content:space-between;
+
+    padding:15px 6%;
+  }
+
+  .menu-toggle{
+
+    display:block;
+  }
+
+  nav ul{
+
+    position:absolute;
+
+    top:80px;
+
+    left:0;
+
+    width:100%;
+
+    background:rgba(0,0,0,0.96);
+
+    backdrop-filter:blur(10px);
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:25px;
+
+    padding:30px 0;
+
+    display:none;
+  }
+
+  nav ul.active{
+
+    display:flex;
+  }
+
+  nav ul li{
+
+    width:100%;
+
+    text-align:center;
+  }
+
+  nav a{
+
+    font-size:18px;
+  }
+
 }
