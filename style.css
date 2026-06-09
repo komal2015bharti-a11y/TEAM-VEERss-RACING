@@ -430,3 +430,63 @@ footer h2{
 
   justify-content:center;
 }
+
+/* MEMBER CARDS */
+
+.member-card{
+
+  overflow:hidden;
+
+  padding:0;
+
+  text-align:center;
+
+  width:300px;
+}
+
+.member-card img{
+
+  width:100%;
+
+  height:320px;
+
+  object-fit:cover;
+
+  transition:0.5s;
+}
+
+.member-info{
+
+  padding:25px;
+}
+
+.member-card h3{
+
+  font-size:28px;
+
+  margin-bottom:15px;
+}
+
+.member-name{
+
+  font-weight:600;
+
+  color:#ff6600;
+
+  margin-bottom:12px;
+}
+
+.member-card p{
+
+  line-height:1.7;
+}
+
+.member-card:hover{
+
+  transform:translateY(-10px);
+}
+
+.member-card:hover img{
+
+  transform:scale(1.05);
+}
