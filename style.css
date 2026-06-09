@@ -1098,3 +1098,198 @@ footer h2{
 
   box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
+
+
+
+/* TEAM PAGE */
+
+.team-page{
+
+  background:#f5f5f5;
+
+  min-height:100vh;
+
+  padding:120px 8%;
+
+  text-align:center;
+}
+
+/* TEAM BANNER */
+
+.team-banner{
+
+  height:260px;
+
+  border-radius:30px;
+
+  background:linear-gradient(
+    135deg,
+    #7a0000,
+    #b30000,
+    #ff1a1a
+  );
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  margin-bottom:80px;
+}
+
+.team-banner h1{
+
+  color:white;
+
+  font-size:80px;
+
+  letter-spacing:5px;
+}
+
+/* TITLE */
+
+.team-page h2{
+
+  font-size:65px;
+
+  color:#b30000;
+
+  margin-bottom:20px;
+
+  text-transform:uppercase;
+}
+
+/* SUBTITLE */
+
+.team-page-subtitle{
+
+  color:#555;
+
+  font-size:20px;
+
+  margin-bottom:70px;
+}
+
+/* CARD CONTAINER */
+
+.team-page .card-container{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  gap:40px;
+}
+
+/* MEMBER CARD */
+
+.team-page .member-card{
+
+  background:white;
+
+  width:320px;
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+  transition:0.4s;
+}
+
+.team-page .member-card:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:0 15px 40px rgba(179,0,0,0.2);
+}
+
+/* MEMBER IMAGE */
+
+.team-page .member-card img{
+
+  width:100%;
+
+  height:350px;
+
+  object-fit:cover;
+}
+
+/* MEMBER INFO */
+
+.team-page .member-info{
+
+  padding:25px;
+}
+
+.team-page .member-info h3{
+
+  color:#b30000;
+
+  font-size:24px;
+
+  margin-bottom:12px;
+}
+
+.team-page .member-info p{
+
+  color:#444;
+
+  font-size:17px;
+}
+
+/* BACK BUTTON */
+
+.team-page .whole-team-btn{
+
+  background:#b30000;
+
+  color:white;
+
+  text-decoration:none;
+
+  display:inline-block;
+
+  margin-top:60px;
+}
+
+.team-page .whole-team-btn:hover{
+
+  background:#8f0000;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .team-banner{
+
+    height:180px;
+  }
+
+  .team-banner h1{
+
+    font-size:42px;
+  }
+
+  .team-page h2{
+
+    font-size:40px;
+  }
+
+  .team-page-subtitle{
+
+    font-size:16px;
+  }
+
+  .team-page .member-card{
+
+    width:100%;
+    max-width:340px;
+  }
+
+}
