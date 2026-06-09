@@ -903,3 +903,198 @@ footer h2{
 
   box-shadow:0 0 20px rgba(255,102,0,0.5);
 }
+/* WHOLE TEAM BUTTON */
+
+.whole-team-container{
+
+  text-align:center;
+
+  margin-top:50px;
+}
+
+.whole-team-btn{
+
+  padding:18px 42px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#ff6600;
+
+  color:white;
+
+  font-size:18px;
+
+  cursor:pointer;
+
+  transition:0.4s;
+}
+
+.whole-team-btn:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:0 0 20px rgba(255,102,0,0.5);
+}
+
+/* TEAM MODAL */
+
+.team-modal{
+
+  position:fixed;
+
+  inset:0;
+
+  background:rgba(0,0,0,0.95);
+
+  display:none;
+
+  justify-content:center;
+
+  align-items:center;
+
+  z-index:9999;
+
+  padding:30px;
+}
+
+.team-modal-content{
+
+  background:#111;
+
+  width:100%;
+
+  max-width:1000px;
+
+  padding:50px;
+
+  border-radius:25px;
+
+  max-height:90vh;
+
+  overflow-y:auto;
+
+  position:relative;
+}
+
+.close-team-modal{
+
+  position:absolute;
+
+  top:20px;
+
+  right:30px;
+
+  font-size:45px;
+
+  color:white;
+
+  cursor:pointer;
+}
+
+.team-modal-subtitle{
+
+  margin:20px 0 40px;
+
+  color:#bbb;
+}
+
+.whole-team-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+  gap:25px;
+}
+
+.whole-team-member{
+
+  background:#1b1b1b;
+
+  padding:22px;
+
+  border-radius:15px;
+
+  transition:0.4s;
+}
+
+.whole-team-member:hover{
+
+  transform:translateY(-5px);
+
+  background:#ff6600;
+}
+
+/* ALUMNI */
+
+.alumni-subtitle{
+
+  margin-bottom:40px;
+}
+
+.alumni-buttons{
+
+  display:flex;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  gap:20px;
+
+  margin-bottom:50px;
+}
+
+.alumni-buttons button{
+
+  padding:15px 35px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:#ff6600;
+
+  color:white;
+
+  cursor:pointer;
+
+  transition:0.4s;
+}
+
+.alumni-buttons button:hover{
+
+  transform:translateY(-4px);
+}
+
+.alumni-content{
+
+  display:none;
+}
+
+.alumni-content.active{
+
+  display:block;
+}
+
+.alumni-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+  gap:25px;
+}
+
+.alumni-member{
+
+  background:white;
+
+  padding:22px;
+
+  border-radius:15px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
