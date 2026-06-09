@@ -145,6 +145,36 @@ nav a:hover{
   box-shadow:0 0 25px rgba(255,102,0,0.6);
 }
 
+/* COLLEGE BUTTON */
+
+.college-btn{
+
+  display:inline-block;
+
+  margin-top:35px;
+
+  padding:16px 38px;
+
+  background:#ff6600;
+
+  color:white;
+
+  text-decoration:none;
+
+  border-radius:12px;
+
+  font-weight:600;
+
+  transition:0.4s;
+}
+
+.college-btn:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:0 0 20px rgba(255,102,0,0.5);
+}
+
 /* SECTIONS */
 
 .section{
