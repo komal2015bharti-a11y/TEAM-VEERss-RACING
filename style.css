@@ -842,3 +842,64 @@ footer h2{
   }
 
 }
+/* TEAM SLIDER */
+
+.team-slider-wrapper{
+
+  width:100%;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:30px;
+
+  margin-top:70px;
+}
+
+.team-slider{
+
+  width:350px;
+
+  overflow:hidden;
+}
+
+.member-slide{
+
+  display:none;
+}
+
+.member-slide.active{
+
+  display:block;
+}
+
+.slide-btn{
+
+  width:60px;
+
+  height:60px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:#ff6600;
+
+  color:white;
+
+  font-size:28px;
+
+  cursor:pointer;
+
+  transition:0.4s;
+}
+
+.slide-btn:hover{
+
+  transform:scale(1.1);
+
+  box-shadow:0 0 20px rgba(255,102,0,0.5);
+}
