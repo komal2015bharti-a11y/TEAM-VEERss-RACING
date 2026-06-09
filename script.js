@@ -111,3 +111,37 @@ function prevSlide(){
 
   showSlide(currentSlide);
 }
+
+/* WHOLE TEAM MODAL */
+
+const teamModal = document.getElementById("teamModal");
+
+const openTeamModal = document.getElementById("openTeamModal");
+
+const closeTeamModal = document.getElementById("closeTeamModal");
+
+openTeamModal.onclick = ()=>{
+
+  teamModal.style.display = "flex";
+}
+
+closeTeamModal.onclick = ()=>{
+
+  teamModal.style.display = "none";
+}
+
+/* ALUMNI SECTION */
+
+function showAlumni(year){
+
+  const alumniContents =
+    document.querySelectorAll(".alumni-content");
+
+  alumniContents.forEach((content)=>{
+
+    content.classList.remove("active");
+  });
+
+  document.getElementById(year)
+    .classList.add("active");
+}
