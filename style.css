@@ -1311,18 +1311,17 @@ footer{
 
   display:flex;
 
-  flex-direction:column;
+  justify-content:space-between;
 
-  justify-content:center;
+  align-items:flex-start;
 
-  align-items:center;
-
-  text-align:center;
+  flex-wrap:wrap;
 
   gap:50px;
 
   margin-bottom:50px;
 }
+
 /* FOOTER SECTIONS */
 
 .footer-section{
@@ -1494,4 +1493,117 @@ footer{
     justify-content:center;
   }
 
+}
+/* BRAND TITLE */
+
+.brand-title{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  font-weight:700;
+
+  letter-spacing:2px;
+}
+
+.small-text{
+
+  font-size:28px;
+
+  color:white;
+}
+
+.highlight-text{
+
+  font-size:42px;
+
+  color:#ff6600;
+
+  text-shadow:0 0 15px rgba(255,102,0,0.6);
+}
+
+
+/*  AUTO GALLERY*/
+
+.gallery-wrapper{
+
+  overflow:hidden;
+
+  width:100%;
+
+  margin-top:50px;
+}
+
+.gallery-track{
+
+  display:flex;
+
+  gap:25px;
+
+  width:max-content;
+
+  animation:scrollGallery 30s linear infinite;
+}
+
+.gallery-track img{
+
+  width:380px;
+
+  height:260px;
+
+  object-fit:cover;
+
+  border-radius:20px;
+
+  cursor:pointer;
+
+  transition:0.4s;
+}
+
+.gallery-track img:hover{
+
+  transform:scale(1.03);
+}
+
+/* AUTO SCROLL */
+
+@keyframes scrollGallery{
+
+  from{
+
+    transform:translateX(0);
+  }
+
+  to{
+
+    transform:translateX(-50%);
+  }
+}
+.map-box{
+
+  display:inline-block;
+
+  padding:18px 35px;
+
+  background:#ff6600;
+
+  color:white;
+
+  border-radius:14px;
+
+  text-decoration:none;
+
+  margin-top:20px;
+
+  transition:0.4s;
+}
+
+.map-box:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:0 0 20px rgba(255,102,0,0.5);
 }
