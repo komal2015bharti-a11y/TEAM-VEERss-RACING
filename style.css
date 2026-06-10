@@ -1379,6 +1379,7 @@ footer h2{
 
     transform:translateX(-50%);
   }
+}
 
 /* =========================
    VEHICLE SPECIFICATIONS
@@ -1559,7 +1560,7 @@ footer{
 
 /* MAP */
 
-.footer-map img{
+.footer-map{
     width:100%;
     max-width:350px;
     height:auto;
@@ -1620,7 +1621,7 @@ footer{
 
     }
 
-   .footer-map img{
+   .footer-map{
     width:100%;
     max-width:350px;
     height:auto;
@@ -1852,4 +1853,36 @@ body{
 /* Bold*/
 .bold-word{
     font-weight:700;
+}
+
+
+img,
+video{
+    max-width:100%;
+    height:auto;
+}
+
+@media(max-width:768px){
+
+  html,
+  body{
+      overflow-x:hidden;
+      width:100%;
+  }
+
+  .section{
+      padding-left:20px;
+      padding-right:20px;
+  }
+
+  .card-container,
+  .spec-container{
+      gap:20px;
+  }
+
+  .footer-container{
+      grid-template-columns:1fr;
+      gap:30px;
+  }
+
 }
