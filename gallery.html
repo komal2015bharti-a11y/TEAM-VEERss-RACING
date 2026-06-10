@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | TEAM VEERss RACING</title>
+
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo-container">
+
+<img src="images/logo.png" class="logo">
+
+<h1 class="brand-title">
+
+<span class="small-text">TEAM</span>
+
+<span class="highlight-text">VEERss</span>
+
+<span class="small-text">RACING</span>
+
+</h1>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="team.html">Team</a></li>
+
+<li><a href="alumni.html">Alumni</a></li>
+
+</ul>
+
+</nav>
+
+<!-- PAGE BANNER -->
+
+<section class="team-banner">
+
+<h1>GALLERY</h1>
+
+</section>
+
+<!-- IMAGE GALLERY -->
+
+<section class="section dark">
+
+<h2>Our Memories</h2>
+
+<div class="gallery">
+
+<img src="images/gallery1.jpg" alt="">
+<img src="images/gallery2.jpg" alt="">
+<img src="images/gallery3.jpg" alt="">
+<img src="images/gallery4.jpeg" alt="">
+<img src="images/gallery5.jpg" alt="">
+<img src="images/gallery6.jpg" alt="">
+<img src="images/gallery7.jpg" alt="">
+<img src="images/gallery8.jpeg" alt="">
+<img src="images/gallery9.jpg" alt="">
+<img src="images/gallery10.jpeg" alt="">
+<img src="images/gallery11.jpeg" alt="">
+<img src="images/gallery12.jpeg" alt="">
+<img src="images/gallery13.jpeg" alt="">
+<img src="images/gallery14.jpeg" alt="">
+<img src="images/gallery15.jpeg" alt="">
+<img src="images/gallery16.jpeg" alt="">
+<img src="images/gallery17.jpeg" alt="">
+<img src="images/gallery18.jpeg" alt="">
+<img src="images/gallery19.jpeg" alt="">
+<img src="images/gallery20.jpeg" alt="">
+<img src="images/gallery21.jpeg" alt="">
+<img src="images/gallery22.jpeg" alt="">
+<img src="images/gallery23.jpeg" alt="">
+<img src="images/gallery24.jpeg" alt="">
+<img src="images/gallery25.jpeg" alt="">
+<img src="images/gallery26.jpeg" alt="">
+<img src="images/gallery27.jpeg" alt="">
+<img src="images/gallery28.jpeg" alt="">
+<img src="images/gallery29.jpeg" alt="">
+<img src="images/gallery30.jpeg" alt="">
+
+
+</div>
+
+</section>
+
+<!-- POPUP -->
+
+<div class="popup" id="popup">
+
+<span id="closePopup">&times;</span>
+
+<img id="popupImg">
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-container">
+
+<!-- LEFT -->
+
+<div class="footer-section">
+
+<h3>Follow Us</h3>
+
+<div class="footer-socials">
+
+<a href="https://www.instagram.com/veerss_racing?igsh=ZThqb3FlYXNyeXkz" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/team-veerss-racing-2206305a" target="_blank">
+<i class="fab fa-linkedin-in"></i>
+</a>
+
+</div>
+
+<h3>Address</h3>
+
+<p>
+TEAM VEERss RACING<br>
+Veer Surendra Sai University of Technology<br>
+Burla, Sambalpur<br>
+Odisha – 768018
+</p>
+
+</div>
+
+<!-- MIDDLE -->
+
+<div class="footer-section">
+
+<h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="#college">About College</a>
+
+            <a href="#team">About Team</a>
+
+            <a href="#vehicle">Vehicle</a>
+
+            <a href="#achievements">Achievements</a>
+
+            <a href="#future">Future Scope</a>
+
+            <a href="team.html">Whole Team</a>
+
+            <a href="alumni.html">Alumni</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="#contact">Contact Us</a>
+</div>
+
+<!-- RIGHT -->
+
+<div class="footer-section">
+
+<h3>Find Us</h3>
+
+<a href="https://maps.google.com/?q=Veer+Surendra+Sai+University+of+Technology+Burla"
+target="_blank">
+
+<img src="images/map.png"
+alt="Location"
+class="footer-map">
+
+</a>
+
+<p class="map-text">
+Click the map to open Google Maps
+</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+© 2026 TEAM VEERss RACING. All Rights Reserved.
+</p>
+
+<p class="credits">
+Designed & Developed by Komal Bharti
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+const popup = document.getElementById("popup");
+const popupImg = document.getElementById("popupImg");
+const closePopup = document.getElementById("closePopup");
+
+document.querySelectorAll(".gallery img").forEach(img => {
+
+img.addEventListener("click", () => {
+
+popup.style.display = "flex";
+
+popupImg.src = img.src;
+
+});
+
+});
+
+closePopup.addEventListener("click", () => {
+
+popup.style.display = "none";
+
+});
+
+popup.addEventListener("click", (e) => {
+
+if(e.target === popup){
+
+popup.style.display = "none";
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
