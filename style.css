@@ -1559,15 +1559,11 @@ footer{
 
 /* MAP */
 
-.footer-map{
-
+.footer-map img{
     width:100%;
-
     max-width:350px;
-
-    border-radius:15px;
-
-    transition:.4s;
+    height:auto;
+    border-radius:12px;
 }
 
 .footer-map:hover{
@@ -1624,12 +1620,12 @@ footer{
 
     }
 
-    .footer-map{
-
-        margin:auto;
-
-    }
-
+   .footer-map img{
+    width:100%;
+    max-width:350px;
+    height:auto;
+    border-radius:12px;
+}
 }
 
 
@@ -1736,4 +1732,108 @@ footer{
     font-size:13px !important;
 }
 
+}
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px){
+
+    nav{
+        padding:10px 15px;
+    }
+
+    .logo-container{
+        gap:8px;
+    }
+
+    .logo-container img{
+        width:40px;
+        height:auto;
+    }
+
+    .logo-text{
+        font-size:20px;
+        letter-spacing:1px;
+    }
+
+    .logo-text .veerss{
+        font-size:28px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+        font-size:28px;
+    }
+}
+
+@media (max-width:768px){
+
+    .footer-container{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:40px;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right{
+        width:100%;
+    }
+}
+
+@media (max-width:768px){
+
+    .member-card{
+        width:250px;
+    }
+
+    .member-card img{
+        height:220px;
+    }
+
+    .member-card h3{
+        font-size:1.3rem;
+    }
+
+    .member-name{
+        font-size:1rem;
+    }
+}
+
+
+@media (max-width:768px){
+
+    .team-slider{
+        max-width:280px;
+        margin:auto;
+    }
+
+    .slide{
+        width:100%;
+    }
+
+    .slider-btn{
+        width:45px;
+        height:45px;
+        font-size:22px;
+    }
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
 }
