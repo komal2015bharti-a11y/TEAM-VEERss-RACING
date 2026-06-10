@@ -1644,3 +1644,24 @@ footer{
 .footer-socials a:nth-child(2){
     box-shadow:0 0 20px #0A66C2;
 }
+.footer-map{
+    width:100%;
+    max-width:350px;
+    border-radius:15px;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.footer-map:hover{
+    transform:scale(1.04);
+}
+.footer-bottom{
+
+    text-align:center;
+
+    border-top:1px solid #222;
+
+    margin-top:50px;
+
+    padding-top:25px;
+}
