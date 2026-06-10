@@ -1831,3 +1831,109 @@ footer{
     }
 
 }
+
+
+/* =====================
+   MOBILE NAVBAR
+===================== */
+
+@media (max-width: 768px){
+
+    .logo-container{
+        gap:8px;
+    }
+
+    .logo-container img{
+        width:45px;
+        height:auto;
+    }
+
+    .brand-title{
+        gap:6px;
+    }
+
+    .small-text{
+        font-size:12px !important;
+        letter-spacing:1px;
+    }
+
+    .highlight-text{
+        font-size:24px !important;
+    }
+
+    nav{
+        padding:12px 15px;
+    }
+
+}
+
+/* =====================
+   MOBILE MEMBER CARDS
+===================== */
+
+@media (max-width:768px){
+
+.member-card{
+
+    width:260px !important;
+
+    padding:15px !important;
+
+}
+
+.member-card img{
+
+    width:180px !important;
+
+    height:220px !important;
+
+    object-fit:cover;
+}
+
+.member-card h3{
+
+    font-size:18px !important;
+}
+
+.member-name{
+
+    font-size:16px !important;
+}
+
+.member-card p{
+
+    font-size:13px !important;
+}
+
+}
+
+@media (max-width:768px){
+
+.team-slider{
+
+    width:100%;
+}
+
+.slide{
+
+    width:250px !important;
+}
+
+.slide img{
+
+    width:170px !important;
+
+    height:220px !important;
+}
+
+.slide h3{
+
+    font-size:16px !important;
+}
+
+.slide p{
+
+    font-size:13px !important;
+}
+
+}
