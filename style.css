@@ -1886,3 +1886,20 @@ video{
   }
 
 }
+.team-slider{
+  width:100%;
+  max-width:350px;
+}
+@media(max-width:768px){
+
+  .team-slider-wrapper{
+      gap:10px;
+  }
+
+  .slide-btn{
+      width:45px;
+      height:45px;
+      font-size:20px;
+  }
+
+}
