@@ -1903,3 +1903,33 @@ video{
   }
 
 }
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.gallery img{
+    width:350px;
+    height:250px;
+    object-fit:cover;
+    border-radius:18px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery img:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:0 0 25px rgba(255,102,0,0.5);
+}
+
+@media(max-width:768px){
+
+.gallery img{
+    width:100%;
+    max-width:320px;
+    height:220px;
+}
+
+}
