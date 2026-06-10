@@ -33,7 +33,7 @@ revealSections();
 
 /* IMAGE POPUP */
 
-const images = document.querySelectorAll(".gallery img");
+const images = document.querySelectorAll(".gallery-track img");
 
 const popup = document.getElementById("popup");
 
