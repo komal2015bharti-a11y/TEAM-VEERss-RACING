@@ -1837,3 +1837,19 @@ body{
     width:100%;
     overflow-x:hidden;
 }
+
+
+/* Highlight */
+.highlight{
+    color:#ff6a00;
+}
+
+/* Big Text */
+.big-word{
+    font-size:1.5em;
+    color:#ff6a00;
+}
+/* Bold*/
+.bold-word{
+    font-weight:700;
+}
